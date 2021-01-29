@@ -1,0 +1,51 @@
+method = 'adadelta'
+threshold_buy = 1.0201 #must be above 1
+
+learning_rate = 0.000079
+momentum = 0.01
+decay = 0.001
+stoploss_enabled = true
+stoploss_threshold = 0.9799
+price_buffer_len = 100
+min_predictions = 100
+interval = 14
+minPredictionAccuracy = 4
+
+[thresholds]
+low = 33
+high = 40
+persistence = 2
+
+[bbands]
+TimePeriod = 20
+NbDevUp = 2
+NbDevDn = 2
+
+####/*method: 'adadelta',
+  threshold_buy: 1.02,
+
+  baseAmbition: 0.02,
+  modifiedPercentAmbition: 0.1, //multiplier
+
+  learning_rate: 0.000079,
+  momentum: 0.01,
+  decay: 0.001,
+  stoploss_enabled: true,
+  stoploss_threshold: 0.992,
+  hodl_threshold: 0.975,
+  price_buffer_len: 150,
+  min_predictions: 150,
+  minPredictionAccuracy: 0.7,
+
+  interval: 10,
+
+  thresholds: {
+    low: 19,
+    high: 19,
+    persistence: 9,
+  },
+  bbands: {
+    TimePeriod: 10,
+    NbDevUp: 2,
+    NbDevDn: 2
+  }*/####
